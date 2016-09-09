@@ -17,6 +17,13 @@ class View {
         this.print_pertanyaan(rl,myCard,value,nyawa)
       }
 
+      else if(answer == 0){
+        myCard.push(myCard[value])
+        value++
+        console.log("Pertanyaan di skip!")
+        this.print_pertanyaan(rl,myCard,value,nyawa)
+      }
+
       else if(answer.toUpperCase() != myCard[value].term.toUpperCase()){
         nyawa--
         if(nyawa == 0){
@@ -28,9 +35,6 @@ class View {
       }
     });
   }
-
 }
-
-
 
 export default View
