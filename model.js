@@ -2,6 +2,7 @@
 "use strict"
 // write your code here
 let fs = require('fs')
+let prompt = require('prompt')
 let data = JSON.parse(fs.readFileSync('data.json','utf8'))
 let input = 0
 
