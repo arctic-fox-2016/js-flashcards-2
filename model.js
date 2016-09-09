@@ -1,7 +1,10 @@
 
 "use strict"
 // write your code here
+let fs = require('fs')
+let data = JSON.parse(fs.readFileSync('data.json','utf8'))
 let input = 0
+
 class Model {
   static promptjawaban(){
     prompt.get('jawaban',function(err, result){
@@ -18,7 +21,7 @@ class Model {
 
 
   static queue(index){
-    if (input < index){
+    if (input ==! index){
       console.log("------------------------------------------------------------------")
       console.log(data[input].definition)
       Model.promptjawaban()
