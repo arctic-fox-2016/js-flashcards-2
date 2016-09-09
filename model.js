@@ -1,7 +1,7 @@
 
 "use strict"
 // write your code here
-
+let input = 0
 class Model {
   static promptjawaban(){
     prompt.get('jawaban',function(err, result){
