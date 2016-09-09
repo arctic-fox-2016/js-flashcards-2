@@ -26,7 +26,6 @@ class Generic {
           Generic.checkIndexRun(quiz.length)
         } else {
           View.kesempatanHabis()
-          View.statusAnda(tebakanSalah, tebakanBenar)
         }
       }
     })

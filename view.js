@@ -25,7 +25,7 @@ class Generic {
   }
 
   static welcome(){
-    console.log("Mari mengerjakan quiz, anda memilih quiz dari file: ", "data.json"||process.argv[2])
+    console.log("Mari mengerjakan quiz, anda memilih quiz dari file: ", process.argv[2])
   }
 }
 

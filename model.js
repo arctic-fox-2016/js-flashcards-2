@@ -1,13 +1,10 @@
 "use strict"
 // write your code here
 let fs =require('fs')
+let namaFile = process.argv[2] || "data.json"
 
 let ambilFile = function(){
-    if(process.argv[2]!=""){
-      return JSON.parse(fs.readFileSync("data.json",'utf8'))
-    } else {
-      return JSON.parse(fs.readFileSync(process.argv[2],'utf8'))
-    }
+  return JSON.parse(fs.readFileSync("quizzes/"+namaFile,'utf8'))
 }
 
 let quiz = ambilFile()
